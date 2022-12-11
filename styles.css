@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
+/*Small*/
+html {
+    background-color: rgba(122,191,191,.5);
+}
+body {
+    margin: 0 auto;
+    max-width: 414px;
+    background-color: #F2F2F2;
+    color: #0D0D0D;
+    font-family: 'Bebas Neue', sans-serif;
+}
+/*Text*/
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+}
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+menu li, #social li, footer {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+p, dd, li, nav, input {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+dt {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+/*Header*/
+header h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 200px;
+}
+header menu {
+    width: 414px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+a {
+    color: #EB5428;
+    text-decoration: none;
+}
+menu li {
+    list-style-type: none;
+    text-align: center;
+}
+menu svg {
+    display: block;
+    margin: 0;
+    padding-left: 32px;
+}
+header img {
+    max-width: 100%;
+    height: auto;
+}
+header p {
+    margin: 10px;
+}
+/*Body*/
+/*Details*/
+#Detail h2 {
+    text-align: center;
+}
+#Detail dd {
+    display: inline;
+    margin: 0;
+}
+#Detail dd:after{
+    display: block;
+    content: '';
+}
+#Detail dt{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+/*Ingredients*/
+#Ingredients h2 {
+    text-align: center;
+}
+#Ingredients ul {
+    padding-left: 20px;
+}
+#Ingredients li {
+    padding-bottom: 10px;
+}
+/*Directions*/
+#Directions h2 {
+    text-align: center;
+}
+#Directions ol {
+    padding-left: 20px;
+    margin-right: 5px;
+}
+/*Side Dishes*/
+aside {
+    background-color: #7ABFBF;
+}
+aside h2 {
+    text-align: center;
+}
+aside img {
+    max-width: 20%;
+    height: auto;
+}
+.star-active {
+    fill: #EB5428;
+}
+aside dd {
+    margin: 0 0 0 0;
+    padding-top: 5px;
+}
+/*Navigation*/
+nav h2, nav h3 span {
+    display: none;
+}
+nav h2 span {
+    display: auto;
+}
+/*Connect*/
+footer {
+    background-color: #FFFFFF;
+}
+footer h2, footer h3 {
+    display: none;
+}
+footer menu {
+    width: 414px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer menu li {
+    list-style-type: none;
+    text-align: center;
+}
+footer menu svg {
+    display: block;
+    margin: 0;
+    padding-left: 32px;
+}
+#FooterCopyright small {
+    display: block;
+    text-align: center;
+}
+#FooterCopyright img {
+    max-width: 50%;
+    height: auto;
+}
+/*Medium*/
+@media screen and (min-width:768px) {
+    body {
+        max-width: 768px;
+    }
+    #TacoMenu {
+        position: Absolute;
+        background-color: rgb(242,242,242,.7);
+    }
+    header menu {
+        width: 768px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    menu svg {
+        padding-left: 76px;
+    }
+    #Detail dl{
+        text-align: center;
+    }
+    #Flexbox {
+        display: flex;
+        margin: 0;
+    }
+    #Ingredients {
+        width: 30%
+    }
+    #Directions {
+        width: 70%
+    }
+    footer {
+    background-color: #FFFFFF;
+    }
+    footer h2, footer h3 {
+        display: none;
+    }
+    footer menu {
+        margin-left: auto;
+        margin-right: 0;
+    }
+    #FooterCopyright img {
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+/*Large*/
+@media screen and (min-width:1280px) {
+    body {
+        max-width: 1280px;
+    }
+    #HeaderSplit {
+        display: flex;
+    }
+    #TacoMenu {
+        position: relative;
+        background-color: rgb(242,242,242,1);
+        outline: solid #EB5428;
+    }
+    header menu {
+        width: 100px;
+        padding: 0px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    menu svg {
+        display: block;
+        margin: 0 auto 20px auto;
+        padding-left: 0;
+    }
+    #TacoText {
+        width: 90%;
+    }
+    #TacoText p {
+        line-height: 2em;
+    }
+    #Detail {
+        background-color: #0D0D0D;
+        color: #7ABFBF;
+    }
+
+
+    #Directions li {
+        padding: 1em;
+    }
+
+
+
+
+    footer {
+        background-color: #FFFFFF;
+    }
+    footer menu {
+        width: 414px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    footer menu li {
+        list-style-type: none;
+        text-align: center;
+    }
+    footer menu svg {
+        display: block;
+        margin: 0;
+        padding-left: 32px;
+    }
+    #FooterCopyright small {
+        display: block;
+        text-align: left;
+    }
+    #FooterCopyright img {
+        max-width: 30%;
+        height: auto;
+    }
+}
